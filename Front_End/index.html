@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Car Rental</title>
+    <link href="assets/icon/logo.png" rel="icon">
+
+    <meta content="Easy Car Rental, Car rental,Vehicle Rental" name="keywords">
+    <meta content="This is Car Rental Web Project." name="description">
+    <meta content="Nimesh Piyumantha" name="author">
+    <meta content="Nimesh Piyumantha" name="owner">
+    <meta content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no" name="viewport">
+    <meta content="green" name="theme-color">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/normalize.css" rel="stylesheet">
+    <link href="assets/fonts/css/all.min.css" rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap-5.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/sweetalert2-11.6.16/sweetalert2.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- ======= Header =======-->
+<header class="header fixed-top d-flex align-items-center" id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+        <a class="logo d-flex align-items-center me-auto me-lg-0" href="index.html">
+            <h1> EASY <span>RENT.</span></h1>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Register-customer-new">Register</a></li>
+            </ul>
+
+        </nav>
+        <!--navbar-->
+        <a class="btn-login-user" href="pages/login.html">Login</a>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+</header>
+<!-- End Header-->
+
+<!--======= Hero Section =======-->
+<section class="hero d-flex align-items-center section-bg" id="hero">
+    <div class="container">
+        <div class="row justify-content-between gy-5">
+            <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                <h2 data-aos="fade-up">Fast &amp; Easy Way To <br>Rent A Car</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Search & Compare the World's Leading <span
+                        style=" font-weight: 600;">Car Rental</span> Suppliers Today! No Credit Card Fees. We Speak Your
+                    Language. Unbeatable Prices. Destinations: Spain, France, Italy, UK, USA, Portugal, Greece,
+                    Australia, Ireland, Switzerland.</p>
+                <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <a class="btn-Register-customer-new" href="#Register-customer-new">Register</a>
+                    <a class="glightbox btn-watch-video d-flex align-items-center" href="https://vimeo.com/290450151"><i
+                            class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                </div>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+                <img alt="" class="img-fluid img-size" data-aos="zoom-out" data-aos-delay="300"
+                     src="assets/img/mainCar.png">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Hero Section-->
+
+<!-- ======= main =======-->
+<main id="main">
+
+    <!--     ======= About Section =======-->
+    <section class="about" id="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Learn More <span>About Us</span></p>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-7 position-relative about-img"
+                     data-aos="fade-up" data-aos-delay="150" style="background-image: url(assets/img/about-1.jpg); ">
+                    <div class="call-us position-absolute">
+                        <h4>Have a Questions ?</h4>
+                        <p>+94 11 420 7354</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+                    <div class="content ps-0 ps-lg-5">
+                        <p class="fst-italic">
+                            Welcome To Easy Car Rental We Provide Everything You Need To A Car
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> A customer comes to the website and register.
+                            </li>
+                            <li><i class="bi bi-check2-all"></i> Then, the customer can select a car, Pick up time and
+                                date, and other required details.
+                            </li>
+                            <li><i class="bi bi-check2-all"></i> The customer has to make the Loss Damage Waiver payment
+                                to the given bank account information of the car rental and upload the bank slip or the
+                                bank confirmation to the dedicated field in
+                                the renting view.
+                            </li>
+                            <li><i class="bi bi-check2-all"></i> If a driver is requested by the customer, a driver is
+                                randomly assigned to accommodate the customer.
+                            </li>
+                            <li><i class="bi bi-check2-all"></i> After the customer returns the car, he/she has to make
+                                the payment and the rental process will be finalized.
+                            </li>
+                        </ul>
+                        <p>
+
+                            If the vehicle is unharmed the Loss Damage Waiver will be returned in full to the customer.
+                            <br><span style="color: var(--color-primary-red)">(Engine faults and malfunctions in the car will not count when deductions are made
+                            from the Loss Damage Waiver)</span>
+                        </p>
+
+                        <div class="position-relative mt-4">
+                            <img alt="" class="img-fluid" src="assets/img/about-image-2.jpg">
+                            <a class="glightbox play-btn" href=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--     End About Section-->
+
+    <!--     ======= Stats Counter Section =======-->
+    <section class="stats-counter" id="stats-counter">
+        <div class="container" data-aos="zoom-out">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="200"
+                              data-purecounter-start="0"> </span>
+
+                        <p>Clients</p>
+                    </div>
+                </div>
+                <!--End Stats Item-->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="400"
+                              data-purecounter-start="0"></span>
+                        <p>Rents</p>
+                    </div>
+                </div>
+                <!--End Stats Item-->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="2480"
+                              data-purecounter-start="0"></span>
+                        <p>Hours Of Support</p>
+                    </div>
+                </div>
+                <!-- End Stats Item-->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item text-center w-100 h-100">
+                        <span class="purecounter" data-purecounter-duration="1" data-purecounter-end="15"
+                              data-purecounter-start="0"></span>
+                        <p>Workers</p>
+                    </div>
+                </div>
+                <!--End Stats Item-->
+
+            </div>
+
+        </div>
+    </section>
+    <!--     End Stats Counter Section-->
+
+    <!-- ======= Car Section ======= -->
+    <section class="cars" id="cars">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Our Cars</h2>
+                <p>Check Our <span>Car Stock</span></p>
+            </div>
+
+            <div class="form-container sectionBorder">
+                <form action="" id="form-control">
+                    <div class="input-box">
+                        <span class="span m-1"> Car Name</span>
+                        <input id="cName" name="" placeholder="Car Name" type="search">
+                    </div>
+                    <div class="input-box">
+                        <span class="span m-1">Fuel Type</span>
+                        <select class="form-control" id="fuelType">
+                        <option value="">Choose Type</option>
+                        <option value="DIESEL">DIESEL</option>
+                        <option value="PETROL">PETROL</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="span m-1">Car Type</span>
+                        <select class="form-control" id="carType">
+                            <option value="">Choose Type</option>
+                            <option value="GENERAL">GENERAL</option>
+                            <option value="LUXURY">LUXURY</option>
+                            <option value="PREMIUM">PREMIUM</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="span m-1">Transmission Type</span>
+                        <select class="form-control" id="cTransmission">
+                            <option value="">Choose Type</option>
+                            <option value="AUTO">AUTO</option>
+                            <option value="MANUAL">MANUAL</option>
+                        </select>
+                    </div>
+                    <button class="btn" id="searchBtn" name="" type="button">Search</button>
+                </form>
+            </div>
+            <div id="carSection"></div>
+            <!-- <div data-aos="fade-up" class="position-relative d-flex justify-content-center mt-5 sectionBorder">
+                 <div class="d-flex align-items-center col-lg-12 flex-wrap justify-content-center">
+                     <a href="assets/img/cars/bmwi8.png" class="glightbox"></a>
+                     <img class="position-relative cars-img img-fluid m-3 p-2 col-lg-5" src="assets/img/cars/bmwi8.png"
+                          href="">
+
+                     <div class="position-relative col-xl-8 col-md-10 flex-wrap">
+
+                         <h4 class="m-2 p-2 text-center txt-head">BMW I 8 <br>
+                             <p><span>Luxury Package</span><span>&nbsp;- &nbsp;</span><span>Manual</span></p></h4>
+                         <div class="row listStyle m-1">
+                             <div class="col">
+                                 <ul class="list-group">
+                                     <li class="list-group-item">Daily Rate (Rs) <strong>15000</strong></li>
+                                     <li class="list-group-item">Free <strong>100</strong> KM for a Day</li>
+                                     <li class="list-group-item">Price per Extra KM (Rs) <strong>800</strong>
+                                     </li>
+                                 </ul>
+                             </div>
+                             <div class="col">
+                                 <ul class="list-group">
+                                     <li class="list-group-item">Monthly Rate (Rs) <strong>35000</strong></li>
+                                     <li class="list-group-item">Free <strong>3500</strong> KM for a Month</li>
+                                     <li class="list-group-item">Modification</li>
+                                 </ul>
+                             </div>
+                         </div>
+
+                         <div class="d-flex mt-2 m-3 p-2 justify-content-around flex-wrap">
+                             <div class="d-flex justify-content-center mb-4">
+                                 <div class="px-2">
+                                     <i class="fa-solid fa-car m-2 fontSize"></i>
+                                     <span class="span">2020</span>
+                                 </div>
+                                 <div class="px-2 border-left border-right">
+                                     <i class="fa-solid fa-gears m-2 fontSize"></i>
+                                     <span class="span">AUTO</span>
+                                 </div>
+                                 <div class="px-2">
+                                     <i class="fa-solid fa-chair m-2 fontSize"></i>
+                                     <span class="span">4</span>
+                                 </div>
+                                 <div class="px-2">
+                                     <i class="fa-solid fa-road m-2 fontSize"></i>
+                                     <span class="span">50</span>
+                                 </div>
+                                 <div class="px-2">
+                                     <i class="fa-sharp fa-solid fa-door-open m-2 fontSize"></i>
+                                     <span class="span">4</span>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>-->
+        </div>
+
+        <div class="card-body mt-5 d-flex justify-content-center">
+            <!-- Basic Pagination -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="">Previous</a></li>
+                    <li aria-current="page" class="page-item active"><a class="page-link" href="">1</a></li>
+                    <li class="page-item"><a class="page-link" href="">2</a></li>
+                    <li class="page-item"><a class="page-link" href="">3</a></li>
+                    <li class="page-item"><a class="page-link" href="">Next</a></li>
+                </ul>
+            </nav><!-- End Basic Pagination -->
+        </div>
+
+    </section>
+    <!-- End Car Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section class="testimonials section-bg" id="testimonials">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Testimonials</h2>
+                <p>What Are They <span>Saying About Us</span></p>
+            </div>
+
+            <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide ">
+                        <div class="testimonial-item">
+                            <div class="row gy-4 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i> Proin iaculis purus consequat
+                                            sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                                            quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                            risus at semper.
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        <h3>Saul Goodman</h3>
+                                        <h4>Ceo &amp; Founder</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <img alt=""
+                                         class="img-fluid testimonial-img"
+                                         src="assets/img/testimonials/testimonials-1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="row gy-4 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i> Export tempor illum tamen malis
+                                            malis eram quae irure esse labore quem cillum quid cillum eram malis quorum
+                                            velit fore eram velit sunt aliqua noster fugiat irure
+                                            amet legam anim culpa.
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        <h3>Sara Wilsson</h3>
+                                        <h4>Designer</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <img alt=""
+                                         class="img-fluid testimonial-img"
+                                         src="assets/img/testimonials/testimonials-2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="row gy-4 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i> Enim nisi quem export duis
+                                            labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                                            tempor labore quem eram duis noster aute amet eram fore quis
+                                            sint minim.
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        <h3>Jena Karlis</h3>
+                                        <h4>Store Owner</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <img alt=""
+                                         class="img-fluid testimonial-img"
+                                         src="assets/img/testimonials/testimonials-3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="row gy-4 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i> Quis quorum aliqua sint quem
+                                            legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                                            labore duis sunt culpa nulla illum cillum fugiat legam esse
+                                            veniam culpa fore nisi cillum quid.
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        <h3>John Larson</h3>
+                                        <h4>Entrepreneur</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <img alt=""
+                                         class="img-fluid testimonial-img"
+                                         src="assets/img/testimonials/testimonials-4.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Register A Customer ======= -->
+    <section class="Register-customer-new" id="Register-customer-new">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Register A Customer</h2>
+                <p>Register <span>Your Stay</span> With Us</p>
+            </div>
+
+            <div class="row g-0">
+
+                <div class="col-lg-4 register-img sectionBorder"
+                     data-aos="zoom-out" data-aos-delay="200"
+                     style="background-image: url(assets/img/reg_Customer_main.jpg);"></div>
+
+                <div class="col-lg-8 d-flex align-items-center register-form-bg sectionBorder">
+                    <form action="customer" class="reg-customer-form" data-aos="fade-up" data-aos-delay="100"
+                          id="customerForm"
+                          method="post" role="form">
+                        <div class="row gy-3">
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="user_Id">User Id</label>
+                                <input class="form-control" id="user_Id" name="user_Id" placeholder="C00-001" readonly
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="firstName">First Name</label>
+                                <input class="form-control" id="firstName" name="firstName" placeholder="First Name"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="lastName">Last Name</label>
+                                <input class="form-control" id="lastName" name="lastName" placeholder="Last Name"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="contact_No">Contact Number</label>
+                                <input class="form-control" id="contact_No" name="contact_No"
+                                       placeholder="Contact Number"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="address">Address</label>
+                                <input class="form-control" id="address" name="address" placeholder="Address"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-control" id="email" name="email" placeholder="Email Address"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="nic">NIC</label>
+                                <input class="form-control" id="nic" name="nic" placeholder="National ID" type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="license_No">License Id</label>
+                                <input class="form-control" id="license_No" name="license_No"
+                                       placeholder="Driving License"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="nic_Img">Upload NIC</label>
+                                <input class="form-control" id="nic_Img" name="nic_Img" type="file">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="license_Img">Upload License </label>
+                                <input class="form-control" id="license_Img" name="license_Img" type="file">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="role_Type">Role Type</label>
+                                <select class="form-control" id="role_Type" name="role_Type" style="height: 3.2em">
+                                    <option value="REGISTERED_USER">REGISTERED_USER</option>
+                                </select>
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="user_Name">User Name</label>
+                                <input class="form-control" id="user_Name" name="user_Name" placeholder="User Name"
+                                       type="text">
+                                <span class="control-error"></span>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-control" id="password" name="password" placeholder="Enter Password"
+                                       type="password">
+                                <span class="control-error"></span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-success mt-3" id="btnSaveCustomer" type="button">REGISTER
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Register Form -->
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Register A Customer -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section class="gallery section-bg" id="gallery">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>gallery</h2>
+                <p>Check <span>Our Gallery</span></p>
+            </div>
+
+            <div class="gallery-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img
+                                alt="" class="img-fluid" src="assets/img/gallery/gallery-1.jpg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img
+                                alt="" class="img-fluid" src="assets/img/gallery/gallery-2.jpg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img
+                                alt="" class="img-fluid" src="assets/img/gallery/gallery-3.jpg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img
+                                alt="" class="img-fluid" src="assets/img/gallery/gallery-4.jpg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img
+                                alt="" class="img-fluid" src="assets/img/gallery/gallery-5.jpg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img
+                                alt="" class="img-fluid" src="assets/img/gallery/gallery-6.jpg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img
+                                alt="" class="img-fluid" src="assets/img/gallery/gallery-7.jpg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img
+                                alt="" class="img-fluid" src="assets/img/gallery/gallery-8.jpg"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-9.jpg"><img
+                                alt="" class="img-fluid" src="assets/img/gallery/gallery-9.jpg"></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" id="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Need Help? <span>Contact Us</span></p>
+            </div>
+
+            <div class="mb-3">
+                <iframe allowfullscreen
+                        class="map sectionBorder"
+                        frameborder="0 "
+                        src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126794.64611613179!2d79.859393417323!3d6.729201708571183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24616c169e7c3%3A0xd21e80c970651d56!2sPanadura!5e0!3m2!1sen!2slk!4v1676282273985!5m2!1sen!2slk "></iframe>
+            </div>
+            <!-- End Google Maps -->
+
+            <div class="row gy-4 mt-3">
+
+                <div class="col-md-6 ">
+                    <div class="info-item d-flex align-items-center sectionBorder ">
+                        <i class="icon bi bi-map flex-shrink-0 "></i>
+                        <div>
+                            <h3>Our Address</h3>
+                            <p>No. 200,Galle Road,Panadura.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="col-md-6 ">
+                    <div class="info-item d-flex align-items-center sectionBorder ">
+                        <i class="icon bi bi-envelope flex-shrink-0 "></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>info@esay.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="col-md-6 ">
+                    <div class="info-item d-flex align-items-center sectionBorder ">
+                        <i class="icon bi bi-telephone flex-shrink-0 "></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+94 11 420 7354</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="col-md-6 ">
+                    <div class="info-item d-flex align-items-center sectionBorder ">
+                        <i class="icon bi bi-share flex-shrink-0 "></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <div><strong>Mon - Sat:</strong> 24 Hours<br>
+                                <strong>Sunday:</strong> Closed
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+            </div>
+
+            <form action=" " class="email-form p-3 p-md-4 " method="post " role="form ">
+                <div class="row ">
+                    <div class="col-xl-6 form-group ">
+                        <input class="form-control " id="contactName " name="name " placeholder="Your Name "
+                               required type="text ">
+                    </div>
+                    <div class="col-xl-6 form-group ">
+                        <input class="form-control " id="contactEmail " name="email " placeholder="Your Email "
+                               required type="email ">
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <input class="form-control " id="contactSubject " name="subject " placeholder="Subject "
+                           required type="text ">
+                </div>
+                <div class="form-group ">
+                    <textarea class="form-control " name="message " placeholder="Message " required
+                              rows="5 "></textarea>
+                </div>
+                <div class="my-3 ">
+                    <div class="loading ">Loading</div>
+                    <div class="error-message "></div>
+                    <div class="sent-message ">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center ">
+                    <button class="btnSendForm" type="submit">Send Message</button>
+                </div>
+            </form>
+            <!--End Contact Form -->
+
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+</main>
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer class="footer " id="footer ">
+
+    <div class="container ">
+        <div class="row gy-3 ">
+            <div class="col-lg-3 col-md-6 d-flex ">
+                <i class="bi bi-geo-alt icon "></i>
+                <div>
+                    <h4>Address</h4>
+                    <p>
+                        No. 200,Galle Road,<br> Panadura.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links d-flex ">
+                <i class="bi bi-telephone icon "></i>
+                <div>
+                    <h4>Reservations</h4>
+                    <p>
+                        <strong>Phone :</strong> +94 11 420 7354<br>
+                        <strong>Email :</strong> info@esay.com<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links d-flex ">
+                <i class="bi bi-clock icon "></i>
+                <div>
+                    <h4>Opening Hours</h4>
+                    <p><strong> Mon - Sat : 24 Hours </strong><br>Sunday : Closed</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links ">
+                <h4>Follow Us</h4>
+                <div class="social-links d-flex ">
+                    <a class="twitter " href="# "><i class="bi bi-twitter "></i></a>
+                    <a class="facebook " href="# "><i class="bi bi-facebook "></i></a>
+                    <a class="instagram " href="# "><i class="bi bi-instagram "></i></a>
+                    <a class="linkedin " href="# "><i class="bi bi-linkedin "></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav justify-content-center mt-2 ">
+        <li class="nav-item ">
+            <a class="nav-link text " href="# ">Home</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text " href="#about">About</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text " href="#car">Car</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text " href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text " href="#contact ">Contact</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text " href="#Register-customer-new ">Register</a>
+        </li>
+    </ul>
+
+    <div class="container ">
+        <div class="copyright ">&copy; Copyright <strong><span>Easy Rent</span></strong>. All Rights Reserved.</div>
+        <div class="credits ">
+            Designed by <a href="https://nimeshpiyumantha.github.io/Protfoliyo/ " target="_blank ">Nimesh
+            Piyumantha.</a>
+        </div>
+    </div>
+
+</footer>
+<!-- End Footer -->
+
+<a class="scroll-top d-flex align-items-center justify-content-center " href="# "><i class="bi bi-arrow-up-short "></i></a>
+
+<div id="preloader "></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js "></script>
+<script src="assets/vendor/aos/aos.js "></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js "></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
+<script src="assets/vendor/php-email-form/validate.js "></script>
+<script src="assets/vendor/jQuery/jquery-3.6.1.min.js "></script>
+<script rel="script" src="assets/vendor/sweetalert2-11.6.16/sweetalert2.min.js"></script>
+
+
+<!-- Template Main JS File -->
+<script rel="script" src="assets/js/main.js"></script>
+
+<!-- Controller JS File -->
+<script rel="script" src="controller/Reg_UserController.js"></script>
+<script rel="script" src="controller/indexController.js"></script>
+
+<!-- Util JS File -->
+<script rel="script" src="util/alert.js"></script>
+<script rel="script" src="util/validation.js"></script>
+
+</body>
+</html>

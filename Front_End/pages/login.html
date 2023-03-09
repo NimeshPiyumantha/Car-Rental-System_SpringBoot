@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Car Login</title>
+    <link href="../assets/icon/logo.png" rel="icon">
+
+    <meta content="Easy Car Rental, Car rental,Vehicle Rental" name="keywords">
+    <meta content="This is Car Rental Web Project." name="description">
+    <meta content="Nimesh Piyumantha" name="author">
+    <meta content="Nimesh Piyumantha" name="owner">
+    <meta content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no" name="viewport">
+    <meta content="green" name="theme-color">
+
+    <!-- Custom fonts for this template-->
+    <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../assets/vendor/styleslog/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../assets/vendor/sweetalert2-11.6.16/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body style="background: #ecf0f1;">
+
+    <div class="container">
+
+        <!-- Outer Row -->
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-6 sectionBorder">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block" style="background: url(../assets/img/login.webp);background-size: cover"></div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                    </div>
+                                    <form class="user m-2 p-3" id="loginForm">
+                                        <div class="form-group">
+                                            <select class="form-control" id="role_Type" name="role_Type" style="border-radius: 30px;height: 3.5em">
+                                                <option value="RoleType">Choose Role</option>
+                                                <option value="ADMIN">ADMIN</option>
+                                                <option value="REGISTERED_USER">REGISTERED_USER</option>
+                                                <option value="DRIVER">DRIVER</option>
+                                            </select>
+                                        </div>
+                                            <div class="form-group mt-4">
+                                            <input type="text" class="form-control form-control-user"
+                                                id="user_Name" aria-describedby="emailHelp"
+                                                placeholder="Enter User Name...">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-control-user"
+                                                id="password" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox small">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck">
+                                                <label class="custom-control-label" for="customCheck">Remember
+                                                    Me</label>
+                                            </div>
+                                        </div>
+                                        <button id="btnLogin" type="button" class="btn btn-primary btn-user btn-block">
+                                            Login
+                                        </button>
+
+                                    </form>
+                                    <hr>
+                                    <div class="text-center">
+                                        <a class="small" href="">Forgot Password?</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="small" href="../index.html">Create an Account!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../assets/vendor/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jQuery/jquery-3.6.1.min.js "></script>
+    <script rel="script" src="../assets/vendor/sweetalert2-11.6.16/sweetalert2.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Controller JS File -->
+    <script src="../controller/LoginForm.js"></script>
+
+</body>
+
+</html>
