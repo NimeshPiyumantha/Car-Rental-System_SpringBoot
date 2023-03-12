@@ -18,12 +18,12 @@ public interface DriverRepo extends JpaRepository<Driver, String> {
     @Query(value = "SELECT COUNT(user_Id) FROM Driver", nativeQuery = true)
     int getSumDriver();
 
-    @Query(value = "SELECT COUNT(user_Id) FROM Driver WHERE driverAvailability='AVAILABLE'", nativeQuery = true)
+    @Query(value = "SELECT COUNT(user_Id) FROM Driver WHERE driver_Availability='AVAILABLE'", nativeQuery = true)
     int getSumAvailableDriver();
 
-    @Query(value = "SELECT COUNT(user_Id) FROM Driver WHERE driverAvailability='UNAVAILABLE'", nativeQuery = true)
+    @Query(value = "SELECT COUNT(user_Id) FROM Driver WHERE driver_Availability='UNAVAILABLE'", nativeQuery = true)
     int getSumUnavailableDriver();
 
-    @Query(value = "SELECT * FROM Driver WHERE driverAvailability='AVAILABLE'", nativeQuery = true)
+    @Query(value = "SELECT * FROM Driver WHERE driver_Availability='AVAILABLE'", nativeQuery = true)
     List <Driver> availableDrivers();
 }
