@@ -1,4 +1,4 @@
-package lk.ijse.spring;
+package com.easy.car_rental;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
